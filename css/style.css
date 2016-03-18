@@ -3,17 +3,31 @@ body {
   letter-spacing: 1px;
   font-weight: 100;
   line-height: 115%;
+  color: #3a3a3a;
 }
 
 header {
-  width: 800px;
+
   margin: auto;
   text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  background-color: #fff;
+}
+
+header img {
+  width: 390px;
+  margin: auto;
+  margin-top: 15px;
 }
 
 h1 {
   text-align: center;
+  font-family: 'Nordica';
 }
+
+
 
 .banna{
   width: 800px;
@@ -21,10 +35,42 @@ h1 {
 }
 
 hr {
-    border: 0;
-    height: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border: 0;
+  height: 0;
+  width: 600px;
+  margin: auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 0px;
+}
+
+hr.bot {
+  border: 0;
+  height: 0;
+  width: 600px;
+  margin: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 0px!important;
+  margin-top: 0px;
+}
+
+.intro {
+  margin: auto;
+  width: 600px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.intro h1 {
+  font-family:;
+}
+
+.intro p {
+  line-height: 120%;
+  text-align: justify;
+  width: 600px;
+  margin: auto;
 }
 
 @font-face {
@@ -33,10 +79,28 @@ hr {
   src: local('Nordica'), local('Nordica'), url('fonts/NordicaHairline.otf') format('truetype');
 }
 
-.photo img {
+@font-face {
+	font-family: 'Neou-Thin';
+	src: url("fonts/Neou-Thin.ttf");
+  src: local('Neou-Thin'), url('fonts/Neou-Thin.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'KGNeatlyPrinted';
+	src: url("fonts/KGNeatlyPrinted.ttf");
+  src: local('KG'), url('fonts/KGNeatlyPrinted.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: "Sequel-Regular";
+	src: url("fonts/Sequel-Regular.ttf");
+  src: local('Sequel'), url('fonts/Sequel-Regular.ttf') format('truetype');
+}
+
+img.photo  {
   float: left;
   margin: auto;
-  width: 390px;
+  width: 380px;
 }
 
 .pgph {
@@ -64,7 +128,8 @@ hr {
 
 .section1 {
   width: 800px;
-  margin: 30px auto;
+  margin-top: 160px!important;
+  margin: auto;
 }
 
 .description {
@@ -77,23 +142,40 @@ hr {
 
 .list {
   margin: auto;
-  width: 450px;
+  width: 100%;
+    margin-bottom: 20px!important;
+  margin-top: 20px;
 }
 
 .list h2 {
   text-align: center;
 
 }
+.works {
+  width: 100%;
+  margin: auto;
+  margin-left: 130px;
+  margin-bottom: 40px;
+}
 
 .works ul {
-  margin-right: 25px;
+  margin: auto;
+  width: 1200px;
 }
 
 .works ul li {
   list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+  padding-bottom: 15px;
+  float: left;
   text-transform: uppercase;
   font-size: 160%;
   line-height: 130%;
+  border: 3px double #3a3a3a;
+  border-radius: 5px;
+  margin: 10px;
+  text-align: center;
 }
 
 .works ul li:before {
@@ -101,7 +183,44 @@ hr {
   font-size: 160%;
   line-height: 150%;
   padding-right: 10px;
-  padding-top: 10px;
   font-weight: 500;
   font-family: 'helvetica neue';
+}
+
+.works ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toggle-me {
+  display: none;
+}
+
+div:hover .toggle-me{
+  display: inline-block;
+}
+
+footer {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 5px;
+  position: fixed;
+  bottom: 0;
+  z-index: 99999;
+  background-color: #fff;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer h2 {
+    padding-top: 5px;
+}
+
+footer a:hover {
+  color: #BCF1ED;
+  text-decoration: line-through;
 }

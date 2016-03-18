@@ -100,7 +100,8 @@ hr.bot {
 img.photo  {
   float: left;
   margin: auto;
-  width: 380px;
+  width: 350px;
+  margin: 20px;
 }
 
 .pgph {
@@ -127,9 +128,10 @@ img.photo  {
 }
 
 .section1 {
-  width: 800px;
+  width: 900px;
   margin-top: 160px!important;
   margin: auto;
+  margin-left: 200px;
 }
 
 .description {
@@ -174,7 +176,7 @@ img.photo  {
   line-height: 130%;
   border: 3px double #3a3a3a;
   border-radius: 5px;
-  margin: 10px;
+  margin: 12px;
   text-align: center;
 }
 
@@ -192,23 +194,58 @@ img.photo  {
   text-decoration: none;
 }
 
+.works ul li:hover {
+  border-radius: 15px;
+}
+
 .toggle-me {
   display: none;
 }
 
-div:hover .toggle-me{
+div:hover .toggle-me {
   display: inline-block;
+  font-size: 14px;
+  text-transform: none;
+  text-align: center;
+  width: 84px!important;
+}
+
+.socials {
+  margin: auto;
+  margin-bottom: 150px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.socials ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.socials img {
+  width: 45px;
+  margin: 25px;
+}
+
+img.socials {
+  width: 10px;
+  margin: 20px;
+  margin: auto;
 }
 
 footer {
   width: 100%;
   margin: auto;
   text-align: center;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   position: fixed;
   bottom: 0;
   z-index: 99999;
   background-color: #fff;
+  border-top: 1px solid #ccc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #D3E5E6
 }
 
 footer a {
@@ -221,6 +258,6 @@ footer h2 {
 }
 
 footer a:hover {
-  color: #BCF1ED;
+  color: #000;
   text-decoration: line-through;
 }

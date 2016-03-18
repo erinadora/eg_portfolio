@@ -15,6 +15,11 @@ h1 {
   text-align: center;
 }
 
+.banna{
+  width: 800px;
+  margin: auto;
+}
+
 hr {
     border: 0;
     height: 0;
